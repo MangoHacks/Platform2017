@@ -1,9 +1,28 @@
+@import "utils/fonts";
+@import "utils/mixins";
+@import "utils/normalize";
+@import "utils/bootstrap_base";
+@import "utils/grid";
 
-// Fonts
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import "utils/layout_helpers";
 
-// Variables
-@import "variables";
+$font-stack: 'Circular', sans-serif;
+$font-color: #323232;
 
-// Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+$bold: bold;
+$light: 300;
+$normal: normal;
+$medium: 500;
+$black: 900;
+
+body {
+  font-family: $font-stack;
+  color: $font-color;
+  @include min-bp(960px) {
+    font-size: 16px;
+  }
+}
+
+@import "components/nav";
+
+@import "home";

@@ -1,0 +1,26 @@
+.grid {
+  .row {
+    display: block;
+    @include min-bp(640px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .col-12 {
+      @include min-bp(640px) {
+        flex: 1 1 100%;
+      }
+    }
+    .col-6 {
+      @include min-bp(640px) {
+        flex: 1 1 50%;
+      }
+    }
+    .col-4 {
+      flex: 0 1 50%;
+      @include min-bp(640px) {
+        flex: 0 1 25%;
+      }
+    }
+  }
+}
