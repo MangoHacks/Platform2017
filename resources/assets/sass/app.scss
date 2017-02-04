@@ -23,6 +23,19 @@ body {
   }
 }
 
+.footer {
+  .social_media {
+    font-size: 2em;
+    text-align: center;
+    a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px;
+    }
+  }
+}
+
 @import "components/nav";
 
 @import "home";
+@import "register";

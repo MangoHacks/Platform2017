@@ -1,85 +1,14 @@
 @extends('layouts.master')
 
-@section('header-content')
-    <style type="text/css">
-        .mangoReveal { visibility: hidden; }
-        .generalReveal { visibility: hidden; }
-
-        /* Theme colors */
-        .global-hero-bg {
-            background-color: rgb({{ $colors['hero-fill'][0] }});
-        }
-        .global-hero-color {
-            color: rgb({{ $colors['hero-color'][0] }}) !important;
-        }
-        .global-mango-color {
-            color: rgb({{ $colors['mango-color'][0] }}) !important;
-        }
-        .global-accent-bg {
-            background-color: rgb({{ $colors['accent-color'][0] }});
-        }
-        .global-accent-bg:hover {
-            background-color: rgba({{ $colors['accent-color'][0] }}, .8);
-        }
-        .global-accent-color { color: rgb({{ $colors['accent-color'][0] }}) !important; }
-        .global-primary-color { color: rgb({{ $colors['primary-color'][0] }}) !important; }
-        .global-secondary-color { color: rgb({{ $colors['secondary-color'][0] }}) !important; }
-        .global-base-gradient {
-            background: linear-gradient(180deg,
-            rgb({{ $colors['primary-color'][0] }}) 0,
-            rgb({{ $colors['secondary-color'][0] }}) 80%);
-        }
-        .global-primary-gradient {
-            background: rgb({{ $colors['primary-color'][0] }});
-            background: linear-gradient(180deg,
-            rgb({{ $colors['primary-color'][0] }}) 0,
-            hsla(0,0%,100%,0) 50%);
-        }
-        .global-secondary-gradient {
-            background: rgb({{ $colors['secondary-color'][0] }});
-            background: linear-gradient(180deg,
-            rgb({{ $colors['secondary-color'][0] }}) 0,
-            hsla(0,0%,100%,0) 50%);
-        }
-        a {
-            color: rgb({{ $colors['accent-color'][0] }});
-            text-decoration: underline;
-        }
-
-        /* Circles */
-
-        .hero__circle.circle__1 {
-            top: {{$hero['pts']["big"]["top"]}};
-            left:{{$hero['pts']["big"]["left"]}};
-            right:{{$hero['pts']["big"]["right"]}};
-            bottom: {{$hero['pts']["big"]["bottom"]}};
-        }
-        .hero__circle.circle__2 {
-            top: {{$hero['pts']["med"]["top"]}};
-            left:{{$hero['pts']["med"]["left"]}};
-            right:{{$hero['pts']["med"]["right"]}};
-            bottom: {{$hero['pts']["med"]["bottom"]}};
-        }
-        .hero__circle.circle__3 {
-            top: {{$hero['pts']["small"]["top"]}};
-            left:{{$hero['pts']["small"]["left"]}};
-            right:{{$hero['pts']["small"]["right"]}};
-            bottom: {{$hero['pts']["small"]["bottom"]}};
-        }
-    </style>
-    <script>
-        var primaryColor = [
-            {{ $colors['primary-color'][1][0] }},
-            {{ $colors['primary-color'][1][1] }},
-            {{ $colors['primary-color'][1][2] }},
-        ];
-        var secondaryColor = [
-            {{ $colors['secondary-color'][1][0] }},
-            {{ $colors['secondary-color'][1][1] }},
-            {{ $colors['secondary-color'][1][2] }},
-        ];
-    </script>
+@section('title')
+    MangoHacks | A Hackathon at Florida Intenational University
 @endsection
+
+@section('header-content')
+    @include('partials.theme_headmeta')
+@endsection
+
+@section('body-class', 'class=home')
 
 @section('menu')
 <div class="nav">
@@ -127,6 +56,7 @@
         </div>
         <div class="hero-overlay">
             <div class="event-info">
+                <div class="top">
                 <div class="logo">
                     <svg id="the-logo" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 270.6 198">
                         <style type="text/css">
@@ -166,6 +96,7 @@
                 <h1 class="name mangoReveal global-mango-color">MangoHacks</h1>
                 <div class="when mangoReveal global-mango-color">
                     Florida International University / February 24-26, 2017
+                </div>
                 </div>
                 <div class="action-buttons mangoReveal">
                     <a class="button global-hero-bg global-hero-color primary" href="/register">Register</a>
@@ -244,7 +175,7 @@
                         year is welcome to participate. If it has been a while since you were a
                         student you can still participate as a mentor for the attendees.
                         <br>
-                        <a href="https://mangohacks.typeform.com/to/Kf6671">Sign up to be a mentor</a>
+                        <a targer="_blank" href="https://goo.gl/forms/wCSrsV6CP9ADeOgj2">Sign up to be a mentor</a>
                     </p>
                 </div>
 
@@ -415,11 +346,11 @@
             <h2 class="interest generalReveal">Interested in Sponsoring Us? </h2>
             <p class="sell generalReveal">Email us at <a href="mailto:team@mangohacks.com">team@mangohacks.com</a> for more information!</p>
 
-            <!-- <div class="grid">
+            <div class="grid generalReveal">
                 <div class="row">
                     <div class="col-12">
-                        <a class="logo-wrap" target="_blank" href="http://sga.fiu.edu">
-                            <img src="http://2016.mangohacks.com/img/logos/sga.jpg" alt="FIU SGA" class="logo">
+                        <a class="logo-wrap" target="_blank" href="http://ibm.com">
+                            <img style="padding: 10px 80px;" src="http://2016.mangohacks.com/img/logos/ibm.png" alt="IBM" class="logo">
                         </a>
                     </div>
                 </div>
@@ -430,25 +361,8 @@
                         </a>
                     </div>
                     <div class="col-6">
-                        <a class="logo-wrap" target="_blank" href="http://ibm.com">
-                            <img style="padding: 10px 64px;" class="logo" src="http://2016.mangohacks.com/img/logos/ibm.png" alt="IBM">
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-4">
-                        <a class="logo-wrap" target="_blank" href="http://www.miavina.us">
-                            <img class="logo" src="http://2016.mangohacks.com/img/logos/miavina.png" alt="MiaVina">
-                        </a>
-                    </div>
-                    <div class="col-4">
-                        <a class="logo-wrap" target="_blank" href="http://miamibeachapi.com">
-                            <img class="logo" src="http://2016.mangohacks.com/img/logos/mbvca.png" alt="Miami Beach Visitor & Convention Authority">
-                        </a>
-                    </div>
-                    <div class="col-4">
-                        <a class="logo-wrap" target="_blank" href="http://google.com">
-                            <img class="logo" src="http://2016.mangohacks.com/img/logos/google.png" alt="Google">
+                        <a class="logo-wrap" target="_blank" href="http://careers.jpmorgan.com/careers/divisions/technology">
+                            <img style="padding: 20px 30px;" class="logo" src="/img/logos/JPMC_logo.png" alt="JPMorgan Chase">
                         </a>
                     </div>
                 </div>
@@ -459,29 +373,29 @@
                         </a>
                     </div>
                     <div class="col-4">
-                        <a class="logo-wrap" target="_blank" href="http://soylent.com">
-                            <img class="logo" src="http://2016.mangohacks.com/img/logos/soylent.png" alt="Soylent">
-                        </a>
-                    </div>
-                    <div class="col-4">
-                        <a class="logo-wrap" target="_blank" href="http://engagement.fiu.edu/">
-                            <img class="logo" src="http://2016.mangohacks.com/img/logos/engagement.jpg" alt="FIU Office Of Enagement">
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-4">
                         <a class="logo-wrap" target="_blank" href="http://www.ultimatesoftware.com/">
-                            <img class="logo" src="http://2016.mangohacks.com/img/logos/ultimate.jpg" alt="Ultimate Software">
+                            <img class="logo" src="http://2016.mangohacks.com/img/logos/ultimate.jpg" alt="Soylent">
                         </a>
                     </div>
                     <div class="col-4">
-                        <a class="logo-wrap" target="_blank" href="https://ultrapress.com/">
-                            <img class="logo" src="http://2016.mangohacks.com/img/logos/ultrapress.png" alt="Ultra Press">
+                        <a class="logo-wrap" target="_blank" href="http://honors.fiu.edu/">
+                            <img class="logo" src="/img/logos/fiuhonors.jpg" alt="FIU Honors College">
                         </a>
                     </div>
                 </div>
-            </div> -->
+                {{--<div class="row">--}}
+                    {{--<div class="col-4">--}}
+                        {{--<a class="logo-wrap" target="_blank" href="http://www.ultimatesoftware.com/">--}}
+                            {{--<img class="logo" src="http://2016.mangohacks.com/img/logos/ultimate.jpg" alt="Ultimate Software">--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                    {{--<div class="col-4">--}}
+                        {{--<a class="logo-wrap" target="_blank" href="https://ultrapress.com/">--}}
+                            {{--<img class="logo" src="http://2016.mangohacks.com/img/logos/ultrapress.png" alt="Ultra Press">--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            </div>
         </div>
     </section>
 
@@ -490,17 +404,17 @@
             <h1 class="heading global-accent-color">Partners</h1>
             <div class="grid">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-6">
                         <a href="https://mlh.io/seasons/na-2017/events">
                             <img class="logo" style="max-width: 140px;" src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg" alt="MLH">
                         </a>
                     </div>
-                    <div class="col-4">
-                        <img style="padding: 0px 50px;" class="logo" src="http://2016.mangohacks.com/img/logos/acm-logo.png" alt="ACM">
+                    <div class="col-6">
+                        <img style="max-width: 200px;" class="logo" src="http://2016.mangohacks.com/img/logos/acm-logo.png" alt="ACM">
                     </div>
-                    <div class="col-4">
-                        <img class="logo" src="http://2016.mangohacks.com/img/logos/upe.png" alt="Upsilon Pi Epsilon">
-                    </div>
+                    {{--<div class="col-4">--}}
+                        {{--<img class="logo" src="http://2016.mangohacks.com/img/logos/upe.png" alt="Upsilon Pi Epsilon">--}}
+                    {{--</div>--}}
                 </div>
             </div>
         </div>
@@ -510,8 +424,37 @@
         <div class="container">
             <h1 class="heading global-accent-color">Register</h1>
             <p>
-                It's time. <a href="#">Register today</a>.
+                It's time. <a href="/register">Register today</a>.
             </p>
         </div>
     </section>
+@endsection
+
+@section('footer-scripts')
+<script src="/js/home.js" type="text/javascript"></script>
+<script>
+    $(document).ready(function() {
+        var $nav = $('.nav .menu');
+
+        $('.nav').sticky();
+
+        $('.mobile-trigger').on('click',function (e) {
+            e.preventDefault();
+            if(!$nav.hasClass('active')){
+                $nav.addClass('active');
+                $('.mobile-trigger').removeClass('active');
+                $('.mobile-close').addClass('active');
+            }
+        });
+
+        $('.mobile-close').on('click', function(e){
+            e.preventDefault();
+            if($nav.hasClass('active')){
+                $nav.removeClass('active');
+                $('.mobile-trigger').addClass('active');
+                $('.mobile-close').removeClass('active');
+            }
+        });
+    });
+</script>
 @endsection

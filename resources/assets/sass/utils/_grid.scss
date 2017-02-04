@@ -1,24 +1,26 @@
 .grid {
   .row {
-    display: block;
-    @include min-bp(640px) {
-      display: flex;
-      align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    @include min-bp(600px) {
       justify-content: space-around;
+      flex-wrap: nowrap;
     }
     .col-12 {
-      @include min-bp(640px) {
+      @include min-bp(600px) {
         flex: 1 1 100%;
       }
     }
     .col-6 {
-      @include min-bp(640px) {
+      @include min-bp(600px) {
         flex: 1 1 50%;
       }
     }
     .col-4 {
       flex: 0 1 50%;
-      @include min-bp(640px) {
+      @include min-bp(600px) {
         flex: 0 1 25%;
       }
     }
