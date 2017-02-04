@@ -136,16 +136,16 @@
                     <label for="shirt_size">Shirt Size <sup>*</sup></label>
                     <select class="form-control" name="shirt_size" required>
                         <option value="" disabled></option>
-                        <option {{ old('shirt_size') == "m-s" ? selected : "" }} value="m-s">Men's Small</option>
-                        <option {{ old('shirt_size') == "m-m" ? selected : "" }} value="m-m">Men's Medium</option>
-                        <option {{ old('shirt_size') == "m-l" ? selected : "" }} value="m-l">Men's Large</option>
-                        <option {{ old('shirt_size') == "m-xl" ? selected : "" }} value="m-xl">Men's XL</option>
-                        <option {{ old('shirt_size') == "m-2xl" ? selected : "" }} value="m-2xl">Men's XXL</option>
-                        <option {{ old('shirt_size') == "m-3xl" ? selected : "" }} value="m-3xl">Men's XXXL</option>
-                        <option {{ old('shirt_size') == "w-s" ? selected : "" }} value="w-s">Women's Small</option>
-                        <option {{ old('shirt_size') == "w-m" ? selected : "" }} value="w-m">Women's Medium</option>
-                        <option {{ old('shirt_size') == "w-l" ? selected : "" }} value="w-l">Women's Large</option>
-                        <option {{ old('shirt_size') == "w-xl" ? selected : "" }} value="w-xl">Women's XL</option>
+                        <option {{ old('shirt_size') == "m-s" ? "selected" : "" }} value="m-s">Men's Small</option>
+                        <option {{ old('shirt_size') == "m-m" ? "selected" : "" }} value="m-m">Men's Medium</option>
+                        <option {{ old('shirt_size') == "m-l" ? "selected" : "" }} value="m-l">Men's Large</option>
+                        <option {{ old('shirt_size') == "m-xl" ? "selected" : "" }} value="m-xl">Men's XL</option>
+                        <option {{ old('shirt_size') == "m-2xl" ? "selected" : "" }} value="m-2xl">Men's XXL</option>
+                        <option {{ old('shirt_size') == "m-3xl" ? "selected" : "" }} value="m-3xl">Men's XXXL</option>
+                        <option {{ old('shirt_size') == "w-s" ? "selected" : "" }} value="w-s">Women's Small</option>
+                        <option {{ old('shirt_size') == "w-m" ? "selected" : "" }} value="w-m">Women's Medium</option>
+                        <option {{ old('shirt_size') == "w-l" ? "selected" : "" }} value="w-l">Women's Large</option>
+                        <option {{ old('shirt_size') == "w-xl" ? "selected" : "" }} value="w-xl">Women's XL</option>
                     </select>
                 </div>
 
