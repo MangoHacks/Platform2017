@@ -83,13 +83,13 @@
 
                     <label for="school_year">Current Year? <sup>*</sup></label>
                     <select class="form-control" name="school_year" id="school_year">
-                        <option {{ old('school_year') == "freshman" ? selected : "" }} value="freshman">Freshman</option>
-                        <option {{ old('school_year') == "sophomore" ? selected : "" }} value="sophomore">Sophomore</option>
-                        <option {{ old('school_year') == "junior" ? selected : "" }} value="junior">Junior</option>
-                        <option {{ old('school_year') == "senior" ? selected : "" }} value="senior">Senior</option>
-                        <option {{ old('school_year') == "seniorplus" ? selected : "" }} value="seniorplus">"Super Senior"</option>
-                        <option {{ old('school_year') == "gradstudent" ? selected : "" }} value="gradstudent">Grad Student</option>
-                        <option {{ old('school_year') == "graduated" ? selected : "" }} value="graduated">Gratuated recently</option>
+                        <option {{ old('school_year') == "freshman" ? "selected" : "" }} value="freshman">Freshman</option>
+                        <option {{ old('school_year') == "sophomore" ? "selected" : "" }} value="sophomore">Sophomore</option>
+                        <option {{ old('school_year') == "junior" ? "selected" : "" }} value="junior">Junior</option>
+                        <option {{ old('school_year') == "senior" ? "selected" : "" }} value="senior">Senior</option>
+                        <option {{ old('school_year') == "seniorplus" ? "selected" : "" }} value="seniorplus">"Super Senior"</option>
+                        <option {{ old('school_year') == "gradstudent" ? "selected" : "" }} value="gradstudent">Grad Student</option>
+                        <option {{ old('school_year') == "graduated" ? "selected" : "" }} value="graduated">Gratuated recently</option>
                     </select>
                 </div>
 
