@@ -16,7 +16,3 @@ Route::get('/register', 'HomeController@register');
 Route::post('/register', 'HomeController@registerPost');
 Route::get('/post-register', 'HomeController@afterRegister');
 Route::get('/sweetener', 'HomeController@sweetener');
-
-Route::get('home', function() {
-    return view('home');
-});

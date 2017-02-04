@@ -1,5 +1,6 @@
 <?php
 
+use App\Attendee;
 use Illuminate\Http\Request;
 
 /*
@@ -15,4 +16,12 @@ use Illuminate\Http\Request;
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
+});
+
+Route::get('/attendees', function(Request $request) {
+    return Attendee::all();
+})->middleware('auth:api');
+
+Route::post('/send-confirmations', function(Request $request) {
+    return $request->all();
 });
