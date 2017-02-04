@@ -350,14 +350,14 @@
                 <div class="row">
                     <div class="col-12">
                         <a class="logo-wrap" target="_blank" href="http://ibm.com">
-                            <img style="padding: 10px 80px;" src="http://2016.mangohacks.com/img/logos/ibm.png" alt="IBM" class="logo">
+                            <img style="padding: 10px 80px;" src="/img/logos/ibm.png" alt="IBM" class="logo">
                         </a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-6">
                         <a class="logo-wrap" target="_blank" href="http://statefarm.com">
-                            <img class="logo" src="http://2016.mangohacks.com/img/logos/state_farm.png" alt="State Farm">
+                            <img class="logo" src="/img/logos/state_farm.png" alt="State Farm">
                         </a>
                     </div>
                     <div class="col-6">
@@ -369,12 +369,12 @@
                 <div class="row">
                     <div class="col-4">
                         <a class="logo-wrap" target="_blank" href="http://cis.fiu.edu">
-                            <img class="logo" src="http://2016.mangohacks.com/img/logos/scis.jpg" alt="FIU SCIS">
+                            <img class="logo" src="/img/logos/scis.jpg" alt="FIU SCIS">
                         </a>
                     </div>
                     <div class="col-4">
                         <a class="logo-wrap" target="_blank" href="http://www.ultimatesoftware.com/">
-                            <img class="logo" src="http://2016.mangohacks.com/img/logos/ultimate.jpg" alt="Soylent">
+                            <img class="logo" src="/img/logos/ultimate.jpg" alt="Soylent">
                         </a>
                     </div>
                     <div class="col-4">
@@ -386,12 +386,12 @@
                 {{--<div class="row">--}}
                     {{--<div class="col-4">--}}
                         {{--<a class="logo-wrap" target="_blank" href="http://www.ultimatesoftware.com/">--}}
-                            {{--<img class="logo" src="http://2016.mangohacks.com/img/logos/ultimate.jpg" alt="Ultimate Software">--}}
+                            {{--<img class="logo" src="/img/logos/ultimate.jpg" alt="Ultimate Software">--}}
                         {{--</a>--}}
                     {{--</div>--}}
                     {{--<div class="col-4">--}}
                         {{--<a class="logo-wrap" target="_blank" href="https://ultrapress.com/">--}}
-                            {{--<img class="logo" src="http://2016.mangohacks.com/img/logos/ultrapress.png" alt="Ultra Press">--}}
+                            {{--<img class="logo" src="/img/logos/ultrapress.png" alt="Ultra Press">--}}
                         {{--</a>--}}
                     {{--</div>--}}
                 {{--</div>--}}
@@ -410,10 +410,10 @@
                         </a>
                     </div>
                     <div class="col-6">
-                        <img style="max-width: 200px;" class="logo" src="http://2016.mangohacks.com/img/logos/acm-logo.png" alt="ACM">
+                        <img style="max-width: 200px;" class="logo" src="/img/logos/acm-logo.png" alt="ACM">
                     </div>
                     {{--<div class="col-4">--}}
-                        {{--<img class="logo" src="http://2016.mangohacks.com/img/logos/upe.png" alt="Upsilon Pi Epsilon">--}}
+                        {{--<img class="logo" src="/img/logos/upe.png" alt="Upsilon Pi Epsilon">--}}
                     {{--</div>--}}
                 </div>
             </div>

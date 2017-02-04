@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>@yield('title')</title>
-    <meta property="og:image" content="http://mangohacks.com/img/fb_splash17.jpg">
+    <meta property="og:image" content="https://mangohacks.com/img/fb_splash17.jpg">
     <meta property="og:site_name" content="MangoHacks">
-    <meta property="og:url" content="http://mangohacks.com" />
+    <meta property="og:url" content="https://mangohacks.com" />
     <meta name="description" content="MangoHacks is a 36-hour Hackathon at Florida International University">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
