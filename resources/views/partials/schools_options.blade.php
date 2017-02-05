@@ -460,5 +460,6 @@
 <option value="Wright State University">Wright State University</option>
 <option value="Xavier University">Xavier University</option>
 <option value="Yale University">Yale University</option>
+<option value="York College of Pennsylvania">York College of Pennsylvania</option>
 <option value="Yeshiva University">Yeshiva University</option>
 <option value="High School">High School</option>
