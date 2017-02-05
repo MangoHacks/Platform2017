@@ -116,7 +116,7 @@
                 </div>
 
                 <div class="form-group generalReveal">
-                    <label for="resume">Resume (PDF) <sup>*</sup></label>
+                    <label for="resume">Resume (PDF, doc) <sup>*</sup></label>
                     <div class="input-group">
                         <label class="input-group-btn">
                             <span style="color: white;" class="btn global-accent-bg">
