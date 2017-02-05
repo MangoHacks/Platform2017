@@ -239,7 +239,7 @@
                         Unfortunately, we will <strong>not</strong> be able provide individual travel reimbursements this year.
                     </p>
                     <p>
-                        We encourage car pooling and a good ol' read tip. However, keep an eye out for info on buses coming to North Florida schools. Schools with the most registrations
+                        We encourage car pooling and a good ol' road trip. However, keep an eye out for info on buses coming to North Florida schools. Schools with the most registrations
                         are more likely to get a bus, so get your friends to apply too.
                         <!-- <strong>However,</strong>
                         we are sending a bus to schools in North Florida and will make stops at the schools with
