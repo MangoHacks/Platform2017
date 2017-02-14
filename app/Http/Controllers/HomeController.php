@@ -32,7 +32,7 @@ class HomeController extends Controller
             'school_year' => 'required',
             'school_major' => 'required',
             'first_hackathon' => 'required',
-            'resume' => 'file',
+            'resume' => 'required|file',
             'shirt_size' => 'required',
             'mlh_coc' => 'accepted',
             'mlh_privacy' => 'accepted'
