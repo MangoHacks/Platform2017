@@ -93,6 +93,26 @@ class HomeController extends Controller
         ]);
     }
 
+    public function confirm(Request $request) {
+        $fields = $request->all();
+        $hash_id = $fields['h'];
+
+        $id = (simple_decrypt($hash_id));
+
+        $attendee = Attendee::where('id', $id)->first();
+
+        if($attendee['rsvp'] != 1) {
+            $attendee['rsvp'] = 1;
+            $attendee->save();
+        }
+
+        return view('confirm', [
+            "colors" => $this->getColorTheme(),
+            "hero" => $this->getHeroAndCircles(),
+            'attendee' => $attendee
+        ]);
+    }
+
     public function getHeroAndCircles() {
         $heros = [
             [

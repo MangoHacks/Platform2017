@@ -22,6 +22,4 @@ Route::get('/attendees', function(Request $request) {
     return Attendee::all();
 })->middleware('auth:api');
 
-Route::post('/send-confirmations', function(Request $request) {
-    return $request->all();
-});
+Route::post('/send-confirmations', "OrganizerController@sendConfirmations")->middleware('auth:api');
