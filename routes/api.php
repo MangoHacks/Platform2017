@@ -21,8 +21,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/attendees', function(Request $request) {
     return Attendee::all();
 })->middleware('auth:api');
-Route::post('/attendees/{id}', "AttendeeController@attendeePost")->middleware('auth:api');
 Route::post('/attendees/qr', "AttendeeController@attendeeQRPost")->middleware('auth:api');
+Route::post('/attendees/{id}', "AttendeeController@attendeePost")->middleware('auth:api');
 Route::get('/attendee/count', "AttendeeController@attendeeCount")->middleware('auth:api');
 
 Route::post('/send-confirmations', "OrganizerController@sendConfirmations")->middleware('auth:api');
