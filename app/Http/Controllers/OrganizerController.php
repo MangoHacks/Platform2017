@@ -72,7 +72,6 @@ class OrganizerController extends Controller
             });
 
             $confs_sent = $attendee['confirmations_sent'];
-            $attendee['confirmations_sent'] = $confs_sent + 1;
             $attendee->save();
         }
 

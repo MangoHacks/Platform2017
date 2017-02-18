@@ -20,9 +20,13 @@ class AttendeeController extends Controller
         return $attendee;
     }
 
-    public function attendeeQRPost(Request $request, $hash_id) {
-        $id = (simple_decrypt($hash_id));
+    public function attendeeQRPost(Request $request) {
+        $hash = $request->get('hash');
+        if (!$hash) {
+            abort(404, "Can't find that user");
+        }
 
+        $id = (simple_decrypt($hash));
         $attendee = Attendee::find($id);
         $checked_in = $request->get('checked_in');
 

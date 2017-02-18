@@ -9,8 +9,7 @@
         <p class="greeting" style="color: white;font-size: 36px;font-weight: bold;">MangoHacks is coming up soon!</p>
         <p>This is the first wave of decisions, and you've made the cut.</p>
 
-        //Inside of a blade template.
-        <img src="{!!$message->embedData(QrCode::format('png')->color(229, 58, 75)->size(360)->generate($attendee['hashed_id']), 'QrCode.png', 'image/png')!!}">
+        <img src="{!!$message->embedData(QrCode::format('png')->backgroundColor(249, 182, 78)->color(229, 58, 75)->size(360)->generate($attendee['hashed_id']), 'QrCode.png', 'image/png')!!}">
 
         <p>
             Also, join our <a href="https://www.facebook.com/groups/1714565285540802/" style="color: #E53A4B;">Attendees Facebook Group</a> to start meeting other hackers, organize carpools, share gifs, and get the HYPE going. We'll also be posting info on the bus there.
