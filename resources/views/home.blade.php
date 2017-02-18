@@ -368,8 +368,8 @@
                 </div>
                 <div class="row">
                     <div class="col-4">
-                        <a class="logo-wrap" target="_blank" href="http://cis.fiu.edu">
-                            <img class="logo" src="/img/logos/scis.jpg" alt="FIU SCIS">
+                        <a class="logo-wrap" target="_blank" href="http://startup.fiu.edu">
+                            <img class="logo" src="/img/logos/startupfiu.png" alt="StartUP FIU">
                         </a>
                     </div>
                     <div class="col-4">
@@ -383,18 +383,23 @@
                         </a>
                     </div>
                 </div>
-                {{--<div class="row">--}}
-                    {{--<div class="col-4">--}}
-                        {{--<a class="logo-wrap" target="_blank" href="http://www.ultimatesoftware.com/">--}}
-                            {{--<img class="logo" src="/img/logos/ultimate.jpg" alt="Ultimate Software">--}}
-                        {{--</a>--}}
-                    {{--</div>--}}
-                    {{--<div class="col-4">--}}
-                        {{--<a class="logo-wrap" target="_blank" href="https://ultrapress.com/">--}}
-                            {{--<img class="logo" src="/img/logos/ultrapress.png" alt="Ultra Press">--}}
-                        {{--</a>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
+                <div class="row">
+                    <div class="col-4">
+                        <a class="logo-wrap" target="_blank" href="http://cis.fiu.edu">
+                            <img class="logo" src="/img/logos/scis.jpg" alt="FIU SCIS">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a class="logo-wrap" target="_blank" href="https://www.makeschool.com/">
+                            <img class="logo" src="/img/logos/make_school.png" alt="Make School">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a class="logo-wrap" target="_blank" href="https://ultrapress.com/">
+                            <img class="logo" src="/img/logos/ultrapress.png" alt="UltraPress">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -404,17 +409,17 @@
             <h1 class="heading global-accent-color">Partners</h1>
             <div class="grid">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-4">
                         <a href="https://mlh.io/seasons/na-2017/events">
-                            <img class="logo" style="max-width: 140px;" src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg" alt="MLH">
+                            <img class="logo" style="max-width: 120px;" src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg" alt="MLH">
                         </a>
                     </div>
-                    <div class="col-6">
-                        <img style="max-width: 200px;" class="logo" src="/img/logos/acm-logo.png" alt="ACM">
+                    <div class="col-4">
+                        <img style="max-width: 280px;" class="logo" src="/img/logos/acm-logo.png" alt="ACM">
                     </div>
-                    {{--<div class="col-4">--}}
-                        {{--<img class="logo" src="/img/logos/upe.png" alt="Upsilon Pi Epsilon">--}}
-                    {{--</div>--}}
+                    <div class="col-4">
+                        <img style="max-width: 180px;" class="logo" src="/img/logos/upe.png" alt="Upsilon Pi Epsilon">
+                    </div>
                 </div>
             </div>
         </div>
