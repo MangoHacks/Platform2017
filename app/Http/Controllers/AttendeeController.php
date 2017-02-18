@@ -20,6 +20,18 @@ class AttendeeController extends Controller
         return $attendee;
     }
 
+    public function attendeeQRPost(Request $request, $hash_id) {
+        $id = (simple_decrypt($hash_id));
+
+        $attendee = Attendee::find($id);
+        $checked_in = $request->get('checked_in');
+
+        $attendee->checked_in = $checked_in;
+        $attendee->save();
+
+        return $attendee;
+    }
+
     public function attendeeCount() {
         $attendees_count = Attendee::where('checked_in', 1)->count();
         return [

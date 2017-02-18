@@ -45,6 +45,40 @@ class OrganizerController extends Controller
         return "Sending Emails";
     }
 
+    /**
+     * @param Request $request
+     */
+    public function sendLogistics(Request $request) {
+        $targetUsers = Attendee::where('rsvp', 1)
+            ->where('checked_in', 0)
+            ->get();
+
+        foreach($targetUsers as $attendee) {
+
+            $id = $attendee['id'];
+            $hashed_id = urlencode(simple_encrypt($id));
+            $attendee_data = [
+                'hashed_id' => $hashed_id,
+                'first_name' => $attendee['first_name'],
+                'last_name' => $attendee['last_name'],
+                'email' => $attendee['email']
+            ];
+
+            Mail::send('emails.pre_event', ['attendee' => $attendee_data], function($m) use ($attendee_data) {
+                $m->from('team@mangohacks.com', 'MangoHacks Team');
+
+                $m->to($attendee_data['email'], $attendee_data['first_name'].' '.$attendee_data['last_name'])
+                    ->subject('MangoHacks Decisions Are Out!');
+            });
+
+            $confs_sent = $attendee['confirmations_sent'];
+            $attendee['confirmations_sent'] = $confs_sent + 1;
+            $attendee->save();
+        }
+
+        return "Sending Emails";
+    }
+
     public function registerPost(Request $request) {
         $this->validate($request, [
             'email' => 'required|email|unique:attendees',
