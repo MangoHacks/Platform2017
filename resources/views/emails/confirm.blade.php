@@ -13,7 +13,7 @@
             We're super excited to have you join us in <strong>Miami, FL</strong> this upcoming <strong>Feb 24th - 26th</strong> for a sweet weekend.
         </p>
         <p>
-            We will be sending a bus to north Florida, stopping at FSU, UF, and UCF. We'll release details on social media and through email.
+            We will be sending a bus to North Florida, stopping at FSU, UF, and UCF. We'll release details about reserving your a spot on social media and through email in the next in the next day.
         </p>
         <p>
             Unfortunately we can't provide individual travel reimbursements this year. But if you have
@@ -28,7 +28,7 @@
         </p>
 
         <p>
-            If you still have any questions, hit us up at <a href="mailto:team@mangohacks.com" style="color: #E53A4B;">team@mangohacks.com</a> or on <a href="https://www.facebook.com/MangoHacks" style="color: #E53A4B;">Facebook</a> and <a href="https://twitter.com/fiumangohacks" style="color: #E53A4B;">Twitter</a>.
+            If you still have any questions, hit us up at <a href="mailto:team@mangohacks.com" style="color: #E53A4B;">team@mangohacks.com</a> and follow us on <a href="https://www.facebook.com/MangoHacks" style="color: #E53A4B;">Facebook</a>, <a style="color: #E53A4B;" href="https://www.instagram.com/fiumangohacks/">Instagram</a> and <a href="https://twitter.com/fiumangohacks" style="color: #E53A4B;">Twitter</a>.
         </p>
 
         <p>&lt;3</p>
@@ -36,7 +36,7 @@
 
         <div class="footer" style="background-color: #F9B64E;margin-top: 10px;color: white;padding: 5px;font-size: 11px;">
             <p>
-                &copy; 2016 MangoHacks
+                &copy; 2017 MangoHacks
             </p>
         </div>
     </div>
