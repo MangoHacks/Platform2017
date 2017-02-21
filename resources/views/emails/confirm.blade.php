@@ -13,7 +13,8 @@
             We're super excited to have you join us in <strong>Miami, FL</strong> this upcoming <strong>Feb 24th - 26th</strong> for a sweet weekend.
         </p>
         <p>
-            We will be sending a bus to North Florida, stopping at FSU, UF, and UCF. We'll release details about reserving your a spot on social media and through email in the next in the next day.
+            We will be sending a bus to North Florida, stopping at FSU, UF, and UCF. We'll release details about reserving your a spot on social media 
+            and through email in the next day or two.
         </p>
         <p>
             Unfortunately we can't provide individual travel reimbursements this year. But if you have
@@ -24,7 +25,7 @@
         </p>
         <a class="cto" href="{{url('/')}}/confirm?h={{ $attendee['hashed_id'] }}" style="color: white;display: block;margin: 24px auto;width: 240px;background: #E53A4B;border-radius: 5px;text-align: center;text-decoration: none;font-weight: bold;padding: 16px 24px;font-size: 20px;">Confirm Attendance</a>
         <p>
-            Also, join our <a href="https://www.facebook.com/groups/1714565285540802/" style="color: #E53A4B;">Attendees Facebook Group</a> to start meeting other hackers, organize carpools, share gifs, and get the HYPE going. We'll also be posting info on the bus there.
+            Also, join our <a href="https://www.facebook.com/groups/1714565285540802/" style="color: #E53A4B;">2017 Attendees Facebook Group</a> to start meeting other hackers, organize carpools, share gifs, and get the HYPE going. We'll also be posting info on the bus there.
         </p>
 
         <p>

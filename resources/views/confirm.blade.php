@@ -46,7 +46,7 @@
 @section('content')
     <section class="section jumbo global-base-gradient">
         <div class="container">
-            <h1 class="heading">Boom! You're coming to MangoHacks {{ $attendee['first_name'] }}!</h1>
+            <h1 class="heading">Boom! You've confirmed your attendance {{ $attendee['first_name'] }}!</h1>
         </div>
     </section>
     <section class="section extra-padding">
@@ -56,6 +56,8 @@
             </h3>
 
             <h3>Keep an eye for updates on your email as we get closer to the event.</h3>
+
+            <h3>We'll be sending out info on the North Florida Bus soon. So keep an eye out for details.</h3>
 
             <h3>
                 If you haven't already done it, join the other hackers in the
