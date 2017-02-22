@@ -27,3 +27,4 @@ Route::get('/attendee/count', "AttendeeController@attendeeCount")->middleware('a
 
 Route::post('/send-confirmations', "OrganizerController@sendConfirmations")->middleware('auth:api');
 Route::post('/send-logistics', "OrganizerController@sendLogistics")->middleware('auth:api');
+Route::post('/send-bus-info', "OrganizerController@sendBusInfo")->middleware('auth:api');

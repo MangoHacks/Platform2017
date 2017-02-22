@@ -78,6 +78,41 @@ class OrganizerController extends Controller
         return "Sending Emails";
     }
 
+    /**
+     * @param Request $request
+     */
+    public function sendBusInfo(Request $request) {
+        $targetUsers = Attendee::where('rsvp', 1)
+            ->whereIn('school', [
+                'Embry-Riddle - Daytona Beach',
+                'Florida Institute of Technology',
+                'Florida A&M University',
+                'Florida Polytechnic University',
+                'Florida State University',
+                'Stetson University',
+                'Tallahassee Community College',
+                'University of Central Florida',
+                'University of Florida',
+                'University of South Florida',
+                'University of North Florida'
+            ])->get();
+
+        foreach($targetUsers as $attendee) {
+            $attendee_data = [
+                'first_name' => $attendee['first_name'],
+                'last_name' => $attendee['last_name'],
+                'email' => $attendee['email']
+            ];
+            Mail::send('emails.bus', ['attendee' => $attendee_data], function($m) use ($attendee_data) {
+                $m->from('team@mangohacks.com', 'MangoHacks Team');
+                $m->to($attendee_data['email'], $attendee_data['first_name'].' '.$attendee_data['last_name'])
+                    ->subject('MangoHacks NorthFlo Bus Info!');
+            });
+        }
+
+        return "Sent Bus Emails";
+    }
+
     public function registerPost(Request $request) {
         $this->validate($request, [
             'email' => 'required|email|unique:attendees',
