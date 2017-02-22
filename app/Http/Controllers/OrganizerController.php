@@ -83,7 +83,7 @@ class OrganizerController extends Controller
      */
     public function sendBusInfo(Request $request) {
         $targetUsers = Attendee::where('rsvp', 1)
-            ->whereIn('school', [
+            ->whereIn('school_name', [
                 'Embry-Riddle - Daytona Beach',
                 'Florida Institute of Technology',
                 'Florida A&M University',
