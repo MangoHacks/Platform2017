@@ -319,11 +319,12 @@
                 <div class="day generalReveal">
                     <h3>Sunday</h3>
                     <ul class="times">
-                        <li><span class="time global-accent-color">6:30am</span> Breakfast</li>
-                        <li><span class="time global-accent-color">8:00am</span> Submissions Due</li>
+                        <li><span class="time global-accent-color">7:00am</span> Devpost Submissions Due</li>
+                        <li><span class="time global-accent-color">8:00am</span> Breakfast</li>
                         <li><span class="time global-accent-color">9:00am</span> Hacking Ends<li>
                         <li><span class="time global-accent-color">10:00am</span> Expo Begins</li>
-                        <li><span class="time global-accent-color">1:00pm</span> Closing Ceremony</li>
+                        <li><span class="time global-accent-color">12:00pm</span> Closing Ceremony Begins</li>
+                        <li><span class="time global-accent-color">1:00pm</span> End/Go Home</li>
                     </ul>
                 </div>
             </div>
