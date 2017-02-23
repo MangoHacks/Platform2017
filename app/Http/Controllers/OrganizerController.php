@@ -83,6 +83,7 @@ class OrganizerController extends Controller
      */
     public function sendBusInfo(Request $request) {
         $targetUsers = Attendee::where('rsvp', 1)
+            ->where('confirmations_sent', 1)
             ->whereIn('school_name', [
                 'Embry-Riddle - Daytona Beach',
                 'Florida Institute of Technology',
@@ -108,6 +109,10 @@ class OrganizerController extends Controller
                 $m->to($attendee_data['email'], $attendee_data['first_name'].' '.$attendee_data['last_name'])
                     ->subject('MangoHacks NorthFlo Bus Info!');
             });
+
+            $confs_sent = $attendee['confirmations_sent'];
+            $attendee['confirmations_sent'] = $confs_sent + 1;
+            $attendee->save();
         }
 
         return "Sent Bus Emails";
