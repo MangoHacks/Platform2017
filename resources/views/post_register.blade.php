@@ -41,11 +41,10 @@
                 <h1>Thanks {{session('name', '')}}!</h1>
 
                 <h2>
-                    You've successful registered. We'll be sending out confirmations soon.
-                    So for now keep an eye on your email or you can also <a href="/sweetener"><strong>sweeten yourself</strong></a>.
+                    You've successful registered.
                 </h2>
 
-                <a href="/">Return home &rarr;</a>
+                <a href="/register-late">Return &rarr;</a>
             @endif
         </div>
     </section>

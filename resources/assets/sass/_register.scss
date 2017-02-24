@@ -1,3 +1,4 @@
+.live .container,
 .register .container{
   padding: 0px 20px;
   @include min-bp(768px) {
@@ -8,6 +9,7 @@
   }
 }
 
+.live .hero,
 .register .hero {
   height: 35vh;
   width: 100%;
@@ -165,6 +167,7 @@
   }
 }
 
+.live .section,
 .register .section {
   padding: 48px 0 72px;
   font-size: 1.1em;
@@ -209,6 +212,7 @@
   }
 }
 
+.live .section.form,
 .register .section.form {
   max-width: 768px;
   margin: 0 auto;

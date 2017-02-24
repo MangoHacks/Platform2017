@@ -16,6 +16,13 @@
 
 <script>
     export default {
+        data: {
+            deadline: null,
+            message: '',
+            subtitle: '',
+            updates: null,
+            schedule_entries: null
+        },
         mounted() {
             console.log('Component mounted.')
         }

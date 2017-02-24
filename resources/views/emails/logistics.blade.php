@@ -7,7 +7,7 @@
     </div>
     <div class="email-container" style="max-width: 600px;margin: 0 auto;padding: 0px 20px 20px 20px;background: #F9B64E;">
          <p class="greeting" style="color: white;font-size: 36px;font-weight: bold;">MangoHacks is here!</p>
-        <p>Hi hackers! MangoHacks is right around the corner and we're super excited to have you at Florida International Unversity this weekend.</p>
+        <p>Hi hackers! MangoHacks is here and we're super excited to have you at Florida International Unversity this weekend.</p>
 
         <p>
             That being said, we have some IMPORTANT LOGISTICAL INFORMATION that will help things go smoothly.
@@ -32,9 +32,13 @@
             <br><br>
             For our iOS Workshop by MakeSchool please make sure you have the latest XCode installed on your Mac.
         </p>
-
-            <p>Also, join our <a href="https://www.facebook.com/groups/596999680448749/" style="color: #E53A4B;">Attendees Facebook Group</a> to start meeting other hackers, organize carpools, share gifs, and get the HYPE going.
+        
+        <h3>What to bring?</h3>
+        <p>
+            You’ll need an ID and the stuff you’ll need throughout the weekend. <br>
+            Laptop, chargers, phone, basic hygiene products (toothbrush/toothpase, deodorant, a change of clothes) and anything to keep you fresh through the weekend. A sleeping bag might be cool, too, if you plan on getting some sleep.
         </p>
+        
         <h3>Check out Devpost!</h3>
         <p>
             Want to see what you will be battling for this weekend? We'll be posting updates on prizes as well as the judging criteria on our Devpost.
@@ -53,7 +57,6 @@
             <br><br>
             Get HYPED for this weekend and we'll see you all on Friday!</p>
         <p>
-
         </p>
 
         <p>&lt;3</p>

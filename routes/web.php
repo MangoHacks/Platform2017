@@ -12,8 +12,9 @@
 */
 
 Route::get('/', 'HomeController@index');
-Route::get('/register', 'HomeController@register');
-Route::post('/register', 'HomeController@registerPost');
+Route::get('/register-late', 'HomeController@registerLate');
+Route::post('/register-late', 'HomeController@registerLatePost');
 Route::get('/post-register', 'HomeController@afterRegister');
-Route::get('/confirm/', 'HomeController@confirm');
+Route::get('/confirm', 'HomeController@confirm');
 Route::get('/sweetener', 'HomeController@sweetener');
+Route::get('/live', 'HomeController@live');

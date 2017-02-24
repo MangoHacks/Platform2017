@@ -1,0 +1,101 @@
+[v-cloak] {
+  display: none;
+}
+
+
+.live {
+  .links {
+    padding: 30px 0;
+    text-align: center;
+  }
+  .button {
+    font-size: 1em;
+    padding: 12px 16px;
+  }
+  .flavor-wrap {
+    padding: 20px 0;
+  }
+  .updates, .schedule {
+    > h2 {
+      color: white;
+      font-weight: $bold;
+      text-align: center;
+      border: 1px solid white;
+      margin: 0;
+      padding: 16px;
+    }
+  }
+
+  .tracks-wrap:after {
+    background: rgba(244, 42, 31, 0.75);
+  }
+  .countdown {
+    @include min-bp(490px) {
+    }
+  }
+  p.countdown-sub {
+  }
+  @include min-bp(500px) {
+    .updates-wrap {
+      //margin-right: 10px;
+    }
+    .program-wrap {
+      //margin-left: 10px;
+    }
+  }
+  .updates-wrap, .program-wrap {
+    min-height: 500px;
+    max-height: 700px;
+    overflow-y: auto;
+    border: 1px solid #ECECEC;
+    box-shadow: 0px -12px 11px -13px #9C9C9C inset;
+  }
+  .updates-wrap {
+    padding: 10px;
+  }
+  #live .grid .row {
+    align-items: flex-start;
+  }
+  .update-item {
+    padding: 16px;
+    box-shadow: 0px 0px 10px -3px #BDBDBD;
+    margin-bottom: 12px;
+    border-radius: 3px;
+    .title {
+      margin: 10px 0 5px;
+    }
+    .date {
+      margin: 10px 0;
+      font-weight: $normal;
+    }
+    p {
+      margin: 0;
+      font-size: 16px;
+    }
+  }
+  .schedule-item {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-bottom: 1px solid #E4E4E4;
+    padding: 16px;
+    .time {
+      flex: 1 1 33.33%;
+      text-transform: uppercase;
+      color: red;
+      font-weight: $bold;
+    }
+    .dets {
+      flex: 1 1 66.66%;
+      .location{
+        margin: 0;
+        font-weight: $normal;
+        margin-bottom: 4px;
+      }
+      .title {
+        margin: 0;
+      }
+    }
+  }
+}
+

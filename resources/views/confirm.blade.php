@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Confirm your spot | MangoHacks '16
+    Confirm your spot | MangoHacks '17
 @endsection
 
 @section('header-content')

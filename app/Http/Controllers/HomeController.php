@@ -23,6 +23,13 @@ class HomeController extends Controller
         ]);
     }
 
+    public function registerLate() {
+        return view('register_late', [
+            "colors" => $this->getColorTheme(),
+            "hero" => $this->getHeroAndCircles()
+        ]);
+    }
+
     public function registerPost(Request $request) {
         $this->validate($request, [
             'email' => 'required|email|unique:attendees',
@@ -79,6 +86,47 @@ class HomeController extends Controller
         ]);
     }
 
+    public function registerLatePost(Request $request) {
+        $this->validate($request, [
+            'email' => 'required|email|unique:attendees',
+            'first_name' => 'required',
+            'last_name' => 'required',
+            'school_name' => 'required',
+            'school_year' => 'required',
+            'school_major' => 'required',
+            'first_hackathon' => 'required',
+            'shirt_size' => 'required',
+            'mlh_coc' => 'accepted',
+            'mlh_privacy' => 'accepted'
+        ]);
+
+        $attendee = new Attendee();
+        $attendee['first_name'] = $request->get('first_name');
+        $attendee['last_name'] = $request->get('last_name');
+        $attendee['email'] = $request->get('email');
+        $attendee['school_name'] = $request->get('school_name');
+        $attendee['school_major'] = $request->get('school_major');
+        $attendee['school_year'] = $request->get('school_year');
+        $attendee['first_hackathon'] = $request->get('first_hackathon') == "yes" ? true: false;
+        $attendee['shirt_size'] = $request->get('shirt_size');
+        $attendee['github_url'] = $request->get('github_url', "");
+        $attendee['resume_url'] = "late";
+        $attendee['linkedin_url'] = $request->get('linkedin_url', "");
+        $attendee['dietary'] = $request->get('dietary', "");
+        $attendee['registration_date'] = Carbon::now()->toDateTimeString();
+
+        $saved = $attendee->save();
+        
+        if ($saved) {
+            return redirect('post-register')->with('name', $attendee['first_name']);
+        }
+        
+        return view('register_late', [
+            "colors" => $this->getColorTheme(),
+            "hero" => $this->getHeroAndCircles()
+        ]);
+    }
+
     public function afterRegister() {
         return view('post_register', [
             "colors" => $this->getColorTheme(),
@@ -88,6 +136,13 @@ class HomeController extends Controller
 
     public function sweetener() {
         return view('sweetener', [
+            "colors" => $this->getColorTheme(),
+            "hero" => $this->getHeroAndCircles()
+        ]);
+    }
+
+    public function live() {
+        return view('live', [
             "colors" => $this->getColorTheme(),
             "hero" => $this->getHeroAndCircles()
         ]);

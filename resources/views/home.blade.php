@@ -21,7 +21,6 @@
             <a href="#faq">FAQs</a>
             <a href="#schedule">Schedule</a>
             <a href="#sponsors">Sponsors</a>
-            <a href="/register">Register</a>
         </div>
         <a class="mobile-trigger active" href="#" id="small-menu"><i class="fa fa-bars"></i></a>
         <a class="mobile-close" href="#"><i class="fa fa-times"></i></a>
@@ -99,8 +98,9 @@
                 </div>
                 </div>
                 <div class="action-buttons mangoReveal">
-                    <a class="button global-hero-bg global-hero-color primary" href="/register">Register</a>
-                    <a class="button secondary" href="mailto:team@mangohacks.com">Sponsor Us</a>
+                    {{-- <a class="button global-hero-bg global-hero-color primary" href="/register">Register</a> --}}
+                    <a class="button global-hero-bg global-hero-color primary" href="#">Registration Closed</a>
+                    {{-- <a class="button secondary" href="mailto:team@mangohacks.com">Sponsor Us</a> --}}
                 </div>
             </div>
         </div>
@@ -443,7 +443,7 @@
         <div class="container">
             <h1 class="heading global-accent-color">Register</h1>
             <p>
-                It's time. <a href="/register">Register today</a>.
+                Registration is closed! 
             </p>
         </div>
     </section>
