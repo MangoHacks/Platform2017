@@ -301,19 +301,20 @@
                 <div class="day generalReveal">
                     <h3>Friday</h3>
                     <ul class="times">
-                        <li><span class="time global-accent-color">6:00pm</span> Registration</li>
-                        <li><span class="time global-accent-color">8:00pm</span> Sponsorship Fair/Snack</li>
-                        <li><span class="time global-accent-color">9:30pm</span> Opening Ceremony</li>
+                        <li><span class="time global-accent-color">6:00pm</span> Check-In</li>
+                        <li><span class="time global-accent-color">7:00pm</span> Dinner</li>
+                        <li><span class="time global-accent-color">8:30pm</span> Opening Ceremony</li>
+                        <li><span class="time global-accent-color">9:30pm</span> Team Building + Sponsor Fair</li>
                         <li><span class="time global-accent-color">10:00pm</span> Hacking Begins</li>
                     </ul>
                 </div>
                 <div class="day generalReveal">
                     <h3>Saturday</h3>
                     <ul class="times">
-                        <li><span class="time global-accent-color">12:00am</span> Midnight Snack</li>
-                        <li><span class="time global-accent-color">8:00am</span> Breakfast</li>
+                        <li><span class="time global-accent-color">12:30am</span> Midnight Snack</li>
+                        <li><span class="time global-accent-color">7:30am</span> Breakfast</li>
                         <li><span class="time global-accent-color">12:30pm</span> Lunch</li>
-                        <li><span class="time global-accent-color">6:00pm</span> Dinner</li>
+                        <li><span class="time global-accent-color">7:00pm</span> Dinner</li>
                     </ul>
                 </div>
                 <div class="day generalReveal">
@@ -398,6 +399,18 @@
                     <div class="col-4">
                         <a class="logo-wrap" target="_blank" href="https://ultrapress.com/">
                             <img class="logo" src="/img/logos/ultrapress.png" alt="UltraPress">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <a class="logo-wrap" target="_blank" href="#">
+                            <img class="logo" src="/img/logos/uber.png" alt="UBER">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a class="logo-wrap" target="_blank" href="#">
+                            <img class="logo" src="/img/logos/taxlyfe.png" alt="Taxlyfe">
                         </a>
                     </div>
                 </div>

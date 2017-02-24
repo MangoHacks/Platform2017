@@ -64,14 +64,14 @@ class OrganizerController extends Controller
                 'email' => $attendee['email']
             ];
 
-            Mail::send('emails.pre_event', ['attendee' => $attendee_data], function($m) use ($attendee_data) {
+            Mail::send('emails.logistics', ['attendee' => $attendee_data], function($m) use ($attendee_data) {
                 $m->from('team@mangohacks.com', 'MangoHacks Team');
 
                 $m->to($attendee_data['email'], $attendee_data['first_name'].' '.$attendee_data['last_name'])
-                    ->subject('MangoHacks Decisions Are Out!');
+                    ->subject('MangoHacks Logistics Information!');
             });
 
-            $confs_sent = $attendee['confirmations_sent'];
+            $attendee['confirmations_sent'] = 3;
             $attendee->save();
         }
 
