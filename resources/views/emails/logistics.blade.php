@@ -20,7 +20,7 @@
         </p>
         <h3>Parking</h3>
         <p>
-            PG6 Tech Station is a parking lot on the top levels. If you are parking on campus and you're not an FIU student, contact us at <a href="mailto:team@mangohacks.com" style="color: #E53A4B;">team@mangohacks.com</a> or on the <a href="https://www.facebook.com/groups/596999680448749/" style="color: #E53A4B;">facebook attendees group</a> and we'll set you up with a weekend permit. Otherwise you can park at the visitor parking lots.
+            PG6 Tech Station is a parking lot on the top levels. If you are parking on campus and you're not an FIU student, contact us at <a href="mailto:team@mangohacks.com" style="color: #E53A4B;">team@mangohacks.com</a> or on the <a href="https://www.facebook.com/groups/1714565285540802/" style="color: #E53A4B;">facebook attendees group</a> and we'll set you up with a weekend permit. Otherwise you can park at the visitor parking lots.
         </p>
         <h3>Events</h3>
         <p>
