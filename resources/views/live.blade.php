@@ -46,9 +46,10 @@
 
 
 @section('content')
+<div id="app">
     <section class="section jumbo global-base-gradient">
         <div class="container countdown-container">
-            <h1 class="countdown heading">0:00</h1>
+            <h1 class="countdown heading">@{{ message }}</h1>
                 <p class="countdown-sub">
                     @{{ subtitle }}
                 </p>
@@ -57,8 +58,8 @@
     </section>
     <div class="section links">
         <div class="container">
-            <a href="#reminders" class="button global-accent-bg">Reminders</a>
-            <a href="#map" class="button global-accent-bg">Venue Map</a>
+            {{-- <a href="#reminders" class="button global-accent-bg">Reminders</a> --}}
+            {{-- <a href="#map" class="button global-accent-bg">Venue Map</a> --}}
             <a href="http://slack.mangohacks.com" target="_blank" class="button global-accent-bg">Request Slack Invite</a>
             <a href="http://mangohacks17.devpost.com/" target="_blank" class="button global-accent-bg secondary">Devpost</a>
             <a href="https://www.facebook.com/groups/1714565285540802/" target="_blank" class="button global-accent-bg secondary">Facebook Group</a>
@@ -73,10 +74,10 @@
                         <h2 class="global-accent-bg">Updates</h2>
                         <div class="updates-wrap">
                             <div v-for="update in updates" class="update-item">
-                                <h3 class="title">@{{ update.get('title') }}</h3>
-                                <h5 class="date">@{{ formatParseDate(update.get('createdAt')) }}</h5>
+                                <h3 class="title">@{{ update.title }}</h3>
+                                <h5 class="date">@{{ update.starttime.format('MMM DD, LT') }}</h5>
                                 <p>
-                                    @{{ update.get('subtitle') }}
+                                    @{{ update.subtitle }}
                                 </p>
                             </div>
                         </div>
@@ -85,12 +86,13 @@
                         <h2 class="global-accent-bg">Schedule</h2>
                         <div class="program-wrap">
                             <div v-for="entry in schedule_entries" class="schedule-item">
-                                <div class="time">
-                                    @{{ formatParseDate(entry.get('startTime')) }}
+                                <div class="global-accent-color time">
+                                    @{{ entry.starttime.format('MMM DD') }} <br>
+                                    @{{ entry.starttime.format('LT') }}
                                 </div>
                                 <div class="dets">
-                                    <h5 class="location">@{{ entry.get('subtitle') }}</h5>
-                                    <h3 class="title">@{{ entry.get('title') }}</h3>
+                                    <h3 class="title">@{{ entry.title }}</h3>
+                                    <h5 class="location">@{{ entry.subtitle }}</h5>
                                 </div>
                             </div>
                         </div>
@@ -98,12 +100,13 @@
                 </div>
             </div>
         </div>
-        <div class="container" id="map">
+        {{-- <div class="container" id="map">
             <br><br><br>
             <h2 class="heading mb-lg">Venue Map</h2>
             <a href="/img/map2.jpg"><img class="responsive-image" src="/img/map2.jpg" alt=""></a>
-        </div>
+        </div> --}}
     </section>
+    </div>
 @endsection
 
 
