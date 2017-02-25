@@ -14876,8 +14876,6 @@ var app = new Vue({
     }
 });
 
-console.log(moment());
-
 /***/ }),
 /* 115 */,
 /* 116 */,
