@@ -53,7 +53,7 @@
                 <p class="countdown-sub">
                     @{{ subtitle }}
                 </p>
-                {{-- <a class="button" href="https://docs.google.com/spreadsheets/d/1zIE23x7MLVXNQI7FjE3L9j3tU76CFxRakc-6gRFkq_U/edit?usp=sharing">Table Assignment</a> --}}
+                <a style="color: white;" class="button global-accent-bg" href="http://expo.mangohacks.com">Table Assignment</a>
         </div>
     </section>
     <div class="section links">
