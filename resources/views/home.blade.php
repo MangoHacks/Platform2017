@@ -99,7 +99,7 @@
                 </div>
                 <div class="action-buttons mangoReveal">
                     {{-- <a class="button global-hero-bg global-hero-color primary" href="/register">Register</a> --}}
-                    <a class="button global-hero-bg global-hero-color primary" href="#">Registration Closed</a>
+                    <a class="button global-hero-bg global-hero-color primary" href="/live">Live Updates</a>
                     {{-- <a class="button secondary" href="mailto:team@mangohacks.com">Sponsor Us</a> --}}
                 </div>
             </div>
