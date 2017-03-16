@@ -168,6 +168,16 @@ class HomeController extends Controller
         ]);
     }
 
+    public function postEventResources(Request $request) {
+        $attendees = Attendee::where('checked_in', 1)->get();
+
+        return view('post_event', [
+            "colors" => $this->getColorTheme(),
+            "hero" => $this->getHeroAndCircles(),
+            "attendees" => $attendees
+        ]);
+    }
+
     public function getHeroAndCircles() {
         $heros = [
             [

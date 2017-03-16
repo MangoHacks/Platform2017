@@ -53,7 +53,7 @@
                 <p class="countdown-sub">
                     @{{ subtitle }}
                 </p>
-                <a style="color: white" class="button global-accent-bg" href="http://expo.mangohacks.com">Table Assignment</a>
+                <a style="color: white;" class="button global-accent-bg" href="http://expo.mangohacks.com">Table Assignment</a>
         </div>
     </section>
     <div class="section links">

@@ -18,3 +18,4 @@ Route::get('/post-register', 'HomeController@afterRegister');
 Route::get('/confirm', 'HomeController@confirm');
 Route::get('/sweetener', 'HomeController@sweetener');
 Route::get('/live', 'HomeController@live');
+Route::get('/post-event-resources', 'HomeController@postEventResources')->middleware('auth.basic');;
