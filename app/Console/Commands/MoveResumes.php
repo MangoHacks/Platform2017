@@ -41,7 +41,7 @@ class MoveResumes extends Command
     {
         $attendees = Attendee::where('checked_in', 1)->get();
         foreach ($attendees as $attendee) {
-            if ($attendee->resume_url != 'late') {
+            if ($attendee->resume_url != 'late' && Storage::disk('s3')->exists($attendee->resume_url)) {
                 $this->line('Copying: '.$attendee->email.': '.$attendee->resume_url);
                 $newPath = 'attendeeresumes/'.explode('/', $attendee->resume_url)[1];
                 Storage::disk('s3')->copy($attendee->resume_url, $newPath);
