@@ -49,7 +49,7 @@
 <div id="app">
     <section class="section jumbo global-base-gradient">
         <div class="container countdown-container">
-            <h1 class="countdown heading">@{{ message }}</h1>
+            <h1 class="countdown heading">0:00</h1>
                 <p class="countdown-sub">
                     @{{ subtitle }}
                 </p>
