@@ -6,6 +6,7 @@ use App\Attendee;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -171,10 +172,18 @@ class HomeController extends Controller
     public function postEventResources(Request $request) {
         $attendees = Attendee::where('checked_in', 1)->get();
 
+        $schools_count = DB::table('attendees')
+                     ->select(DB::raw('count(*) as attendee_count, school_name'))
+                     ->where('checked_in', 1)
+                     ->groupBy('school_name')
+                     ->orderBy('attendee_count', 'desc')
+                     ->get();
+
         return view('post_event', [
             "colors" => $this->getColorTheme(),
             "hero" => $this->getHeroAndCircles(),
-            "attendees" => $attendees
+            "attendees" => $attendees,
+            "counts" => $schools_count->toArray()
         ]);
     }
 

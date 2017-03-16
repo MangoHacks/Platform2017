@@ -53,6 +53,25 @@
     </section>
     <section class="section extra-padding">
         <div class="container">
+            <h4>School Count: {{count($counts)}}</h4>
+            <table class="table">
+                <thead> 
+                    <tr> 
+                        <th>School Name</th> 
+                        <th>Attendee Count</th> 
+                    </tr> 
+                </thead> 
+                <tbody>
+                    @foreach($counts as $count)
+                    <tr> 
+                        <td>{{$count->school_name}}</td>
+                        <td>{{$count->attendee_count}}</td>
+                    </tr>
+                    @endforeach 
+                 </tbody> 
+            </table>
+            <br>
+            <hr>
             <h3>Total Attendees: {{count($attendees)}}</h3>
             <table class="table">
                 <thead> 
