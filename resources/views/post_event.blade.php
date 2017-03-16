@@ -53,25 +53,29 @@
     </section>
     <section class="section extra-padding">
         <div class="container">
+            <a href="#attendee-list">Jump to Attendee List</a>
             <h4>School Count: {{count($counts)}}</h4>
+
             <table class="table">
                 <thead> 
                     <tr> 
+                        <th>#</th> 
                         <th>School Name</th> 
                         <th>Attendee Count</th> 
                     </tr> 
                 </thead> 
                 <tbody>
-                    @foreach($counts as $count)
+                    @foreach($counts as $key => $count)
                     <tr> 
+                        <td>{{$key + 1}}</td>
                         <td>{{$count->school_name}}</td>
                         <td>{{$count->attendee_count}}</td>
                     </tr>
                     @endforeach 
                  </tbody> 
             </table>
-            <br>
             <hr>
+            <div id="attendee-list">
             <h3>Total Attendees: {{count($attendees)}}</h3>
             <table class="table">
                 <thead> 
@@ -105,7 +109,7 @@
                     @endforeach 
                  </tbody> 
              </table>
-            
+            </div>
         </div>
     </section>
 @endsection
