@@ -28,3 +28,58 @@ Route::get('/attendee/count', "AttendeeController@attendeeCount")->middleware('a
 Route::post('/send-confirmations', "OrganizerController@sendConfirmations")->middleware('auth:api');
 Route::post('/send-logistics', "OrganizerController@sendLogistics")->middleware('auth:api');
 Route::post('/send-bus-info', "OrganizerController@sendBusInfo")->middleware('auth:api');
+
+Route::get('filters', function(Request $request) {
+	return '
+	  "Filters": [
+	    {
+	      "FieldName": {
+	        "Id": 1,
+	        "Value": "OpportunityOrgLevel"
+	      },
+	      "FilterType": {
+	        "Id": 1,
+	        "Value": "Typeahead"
+	      },
+	      "DisplayName": "Division",
+	      "TranslationKey": null
+	    },
+	    {
+	      "FieldName": {
+	        "Id": 1,
+	        "Value": "OpportunityOrgLevel"
+	      },
+	      "FilterType": {
+	        "Id": 1,
+	        "Value": "Typeahead"
+	      },
+	      "DisplayName": "Department",
+	      "TranslationKey": null
+	    },
+	    {
+	      "FieldName": {
+	        "Id": 1,
+	        "Value": "OpportunityOrgLevel"
+	      },
+	      "FilterType": {
+	        "Id": 1,
+	        "Value": "Typeahead"
+	      },
+	      "DisplayName": "Region",
+	      "TranslationKey": null
+	    },
+	    {
+	      "FieldName": {
+	        "Id": 1,
+	        "Value": "OpportunityOrgLevel"
+	      },
+	      "FilterType": {
+	        "Id": 1,
+	        "Value": "Typeahead"
+	      },
+	      "DisplayName": "Industry",
+	      "TranslationKey": null
+	    }
+	  ]
+	}'
+});
