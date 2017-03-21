@@ -30,7 +30,7 @@ Route::post('/send-logistics', "OrganizerController@sendLogistics")->middleware(
 Route::post('/send-bus-info', "OrganizerController@sendBusInfo")->middleware('auth:api');
 
 Route::get('filters', function(Request $request) {
-	return '
+	return response()->json('
 	  "Filters": [
 	    {
 	      "FieldName": {
@@ -81,5 +81,5 @@ Route::get('filters', function(Request $request) {
 	      "TranslationKey": null
 	    }
 	  ]
-	}'
+	}');
 });
