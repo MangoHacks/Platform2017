@@ -30,56 +30,5 @@ Route::post('/send-logistics', "OrganizerController@sendLogistics")->middleware(
 Route::post('/send-bus-info', "OrganizerController@sendBusInfo")->middleware('auth:api');
 
 Route::get('filters', function(Request $request) {
-	return response()->json('
-	  "Filters": [
-	    {
-	      "FieldName": {
-	        "Id": 1,
-	        "Value": "OpportunityOrgLevel"
-	      },
-	      "FilterType": {
-	        "Id": 1,
-	        "Value": "Typeahead"
-	      },
-	      "DisplayName": "Division",
-	      "TranslationKey": null
-	    },
-	    {
-	      "FieldName": {
-	        "Id": 1,
-	        "Value": "OpportunityOrgLevel"
-	      },
-	      "FilterType": {
-	        "Id": 1,
-	        "Value": "Typeahead"
-	      },
-	      "DisplayName": "Department",
-	      "TranslationKey": null
-	    },
-	    {
-	      "FieldName": {
-	        "Id": 1,
-	        "Value": "OpportunityOrgLevel"
-	      },
-	      "FilterType": {
-	        "Id": 1,
-	        "Value": "Typeahead"
-	      },
-	      "DisplayName": "Region",
-	      "TranslationKey": null
-	    },
-	    {
-	      "FieldName": {
-	        "Id": 1,
-	        "Value": "OpportunityOrgLevel"
-	      },
-	      "FilterType": {
-	        "Id": 1,
-	        "Value": "Typeahead"
-	      },
-	      "DisplayName": "Industry",
-	      "TranslationKey": null
-	    }
-	  ]
-	}');
+	return response()->json(json_decode('{"Filters":[{"FieldName":{"Id":1,"Value":"OpportunityOrgLevel"},"FilterType":{"Id":1,"Value":"Typeahead"},"DisplayName":"Division","TranslationKey":null},{"FieldName":{"Id":1,"Value":"OpportunityOrgLevel"},"FilterType":{"Id":1,"Value":"Typeahead"},"DisplayName":"Department","TranslationKey":null},{"FieldName":{"Id":1,"Value":"OpportunityOrgLevel"},"FilterType":{"Id":1,"Value":"Typeahead"},"DisplayName":"Region","TranslationKey":null},{"FieldName":{"Id":1,"Value":"OpportunityOrgLevel"},"FilterType":{"Id":1,"Value":"Typeahead"},"DisplayName":"Industry","TranslationKey":null}]}', true));
 });
